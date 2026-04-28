@@ -1,0 +1,7 @@
+customtkinter==5.2.2
+SpeechRecognition==3.10.1
+pyttsx3==2.90
+openai==1.14.0
+python-dotenv==1.0.1
+requests==2.31.0
+PyAudio==0.2.14
