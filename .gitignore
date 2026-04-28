@@ -1,0 +1,10 @@
+# Ignore environment variables (API Keys)
+.env
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore logs and local memory
+lyra.log
+lyra_memory.json
