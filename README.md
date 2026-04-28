@@ -4,7 +4,7 @@ LyraVerse is a lightweight, beautiful desktop AI assistant that blends real-time
 
 ---
 
-🚀 Quick highlights
+# 🚀 Quick highlights
 - Modern, dark-themed GUI with typing animation and status indicators
 - Real-time microphone capture + fallback to text-only mode
 - Reliable queued TTS (pyttsx3) to avoid overlapping speech
@@ -29,14 +29,14 @@ Table of contents
 - [Credits & Links](#Credits--Links)
 
 
-Why LyraVerse?
+# Why LyraVerse?
 - Designed for clarity and refinement: small, well-organized codebase focused on UX.
 - Works offline for TTS and voice capture — uses cloud models only for advanced replies.
 - Lightweight and extensible: easy to swap the model backend or add new commands.
 
 ---
 
-Features
+# Features
 - Beautiful, dark UI using CustomTkinter with:
   - Status LED (Online / Listening / Thinking / Speaking)
   - Typewriter-like message animation
@@ -49,7 +49,7 @@ Features
 
 ---
 
-Install (fast)
+# Install (fast)
 
 1. Clone
 ```bash
@@ -82,7 +82,7 @@ Notes:
 
 ---
 
-Configuration
+# Configuration
 
 Create a `.env` file in the project root or export environment variables:
 
@@ -100,7 +100,7 @@ Security: Do not commit `.env` to Git. Use OS-level secret storage for productio
 
 ---
 
-Run
+# Run
 
 Start the GUI and assistant:
 
@@ -114,7 +114,7 @@ Behavior:
 
 ---
 
-Example usage
+# Example usage
 
 - Type or speak: "What's the weather?"
   - Lyra uses OpenWeather and replies with current temperature and conditions.
@@ -130,7 +130,7 @@ Sample session (typed):
 
 ---
 
-Architecture & internals (concise)
+# Architecture & internals (concise)
 
 - main.py
   - LyraGUI: CustomTkinter-based UI, status indicator, typewriter effect.
@@ -146,21 +146,21 @@ User (voice/text) → VoiceAssistant.listen/process_command → built-ins or ask
 
 ---
 
-Extending LyraVerse
+# Extending LyraVerse
 - Add new commands: extend process_command with custom triggers.
 - Swap model backend: replace ai_client initialization and response parsing in ask_ai.
 - Add settings panel: a small GUI panel for API keys, voice selection, and preferences.
 
 ---
 
-Best practices & tips
+# Best practices & tips
 - Keep your system prompt (first memory element) concise but purpose-specific.
 - Limit chat_history size to avoid long payloads to the model — the code already prunes history.
 - Use environment-based configs for keys in CI or multi-machine setups.
 
 ---
 
-Troubleshooting
+# Troubleshooting
 
 Microphone issues:
 - Check system privacy settings to allow microphone access.
@@ -177,7 +177,7 @@ Model/API errors:
 
 ---
 
-Roadmap (short)
+# Roadmap (short)
 - [ ] Settings UI for runtime configuration (voices, API keys)
 - [ ] Plugin system for adding new utilities (calendar, email)
 - [ ] Local LLM support fallback (for offline responses)
@@ -187,7 +187,7 @@ Have ideas? Open an issue or PR — I'm building this with developer ergonomics 
 
 ---
 
-Contributing
+# Contributing
 1. Fork the repo
 2. Create a feature branch: `git checkout -b feat/awesome-feature`
 3. Commit your changes: `git commit -m "feat: add awesome feature"`
@@ -197,7 +197,7 @@ Please keep secrets out of commits and provide clear PR descriptions and screens
 
 ---
 
-License
+# License
 
 LyraVerse is provided under the terms of the LICENSE file in this repository.
 
@@ -210,7 +210,7 @@ Core libraries and acknowledgements:
 
 ---
 
-Credits & Links
+# Credits & Links
 
 - Author: Kishanu Mondal
 - GitHub: https://github.com/kxnux-builds
